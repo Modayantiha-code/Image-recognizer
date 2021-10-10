@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <center>
+            <h1 class="btn btn-defualt heading"> OBJECT RECONIZER </h1>
+
+            <br><br>
+
+            <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+
+            <b class="objectnames">
+        Spider
+        <br>
+        Blue Pen
+        <br>
+        Dog
+        <br>
+        Dollar Bill
+        <br>
+      </b>
+            <label>Webcam View - </label>
+            <div id="cameradiv"></div>
+            <br><br>
+            <div id="clickedpic"></div>
+            <br><br>
+            <button class="btn clickbutton" onclick="clickimage()">Click Image</button>
+            <br><br>
+            <button class="btn clickbutton" onclick="identifyobject()">Identify Object</button>
+            <br><br>
+
+            <p style="font-size: 22px;">I found a <span id="objectnameresult"></span> </p>
+            <p style="font-size: 22px;">This is how confident I am : <span id="objectaccuracyresult"></span> </p>
+        </center>
+
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

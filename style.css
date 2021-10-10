@@ -1,0 +1,33 @@
+body {
+    background: lavender;
+    color: rgb(85, 3, 85);
+}
+
+.heading {
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.objectnames {
+    color: rgb(121, 62, 121);
+}
+
+#cameradiv,
+#clickedpic {
+    border: 3px solid palevioletred;
+    width: 400px;
+    height: 300px;
+    box-shadow: 25px 25px 50px plum;
+}
+
+.clickbutton {
+    background: palevioletred;
+}
+
+#objectnameresult,
+#objectaccuracyresult {
+    font-size: 22px;
+    color: rebeccapurple;
+    font-weight: bold;
+}
